@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    height: 100vh;
+    background-color: dodgerblue;
+    display: flex;
+}
+
+.container {
+    margin: auto;
+    height: 400px;
+    width: 600px;
+    display: flex;
+}
+
+.left,
+.right {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    height: 100%;
+    width: 500px;
+    background-color: cyan;
+}
+
+.left i {
+    font-size: 35px;
+    cursor: pointer;
+}
+.right i {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.left i:hover {
+    font-size: 50px;
+    color: red;
+}
+.right i:hover {
+    font-size: 50px;
+    color: red;
+}
+
+.center img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.points {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.points i {
+    margin: 0 5px;
+    cursor: pointer;
+    color: red;
+}
