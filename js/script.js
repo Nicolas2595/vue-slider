@@ -27,6 +27,35 @@ var app = new Vue ({
                 this.imageIndex = 0;
             }
         }
+    },
+
+    // Soluzione salvando il this in una variabile fuori dal setinterval
+
+    // created: function() {
+    //     var vm = this;
+
+    //     setInterval (function() {
+    //         vm.rightImage();
+    //     },3000)
+
+    // }
+
+    // Soluzione usando la variabile app
+
+    // created: function() {
+        
+    //     setInterval (function() {
+    //        app.rightImage();
+    //     },3000)
+    // }
+
+    // Soluzione con l'arrow function
+
+    created: function() {
+
+        setInterval(() => {
+            this.rightImage();
+        },3000);
     }
 
 });
